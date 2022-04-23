@@ -1,7 +1,40 @@
 .footer{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
     height: 65px;
-    width: 100%;
+    padding: 20px;
+    width: 98%;
     background-color: #282828;
+}
+.footer-left{
+    display: flex;
+    color: white;
+    flex: 0.3;
+    align-items: center;
+}
+.footer-img{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+    max-width: 300px;
+}
+.footer-center{
+    flex: 0.4;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    
+}
+.footer-right{
+ flex: 0.3;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ align-items: center;
 }

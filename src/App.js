@@ -32,7 +32,18 @@ function App() {
           type:"SET_USER",
           user:user,
         });
+        console.log(user.id);
+        spotify.getUserPlaylists(user.id).then((playlists) => {
+          console.log(playlists);
+          dispatch({
+            type:"SET_PLAYLISTS",
+            playlists:playlists,
+          });
+        })
+
+
       })
+      
       
     }
     
